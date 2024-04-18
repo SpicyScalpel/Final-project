@@ -1,0 +1,40 @@
+.card{
+    width: 32%;
+    margin-left: 1%;
+}
+.shop-icon {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 0; /* Сначала сбросим отступ, если есть */
+    margin-left: auto; /* Затем установим правый отступ, чтобы элемент сдвинулся вправо */
+}
+
+.shop-icon img {
+    width: 50px; /* Установите нужный размер */
+    height: 50px;
+    border-radius: 50%; /* Для округления иконки */
+}
+
+.shop-icon:hover img {
+    border: 2px solid orange; /* Пример выделения при наведении */
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-container img {
+    max-width: 50%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.content-container p {
+    max-width: 45%; /* Максимальная ширина текста */
+}
+
