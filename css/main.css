@@ -30,11 +30,45 @@
 }
 
 .content-container img {
-    max-width: 50%; /* Ширина изображения */
-    height: auto; /* Автоматическая высота */
+    max-width: 50%;
+    height: auto;
 }
 
 .content-container p {
     max-width: 45%; /* Максимальная ширина текста */
 }
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Высота карты */
+}
+
+iframe {
+    width: 90%; /* Ширина карты */
+    height: 90%; /* Высота карты */
+    border: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.icons img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .icons {
+        flex-wrap: wrap; /* Перенос иконок на новую строку при сужении экрана */
+        justify-content: flex-start; /* Выравнивание иконок по левому краю */
+    }
+}
+
 

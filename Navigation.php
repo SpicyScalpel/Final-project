@@ -4,7 +4,7 @@
             <img src="img/logo.png" alt="KK project" width="100" height="100" style="border-radius: 50%;">
         </a>
     </h5>
-    <a class="p-2 text-dark" href="#">Contacts</a>
+    <a class="p-2 text-dark" href="Contacts.php">Contacts</a>
     <a class="p-2 text-dark" href="MyWorks.php">Products</a>
     <a class="p-2 text-dark" href="AboutMe.php">About me</a>
     <a class="p-2 text-dark" href="About.php">About</a>

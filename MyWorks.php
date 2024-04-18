@@ -16,7 +16,7 @@
     </div>
 </nav>
 
-<div class="container mt-5">
+<div class="container mt-3">
     <h3 class="mb-5">My works</h3>
     <div class="d-flex flex-wrap">
         <?php
