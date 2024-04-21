@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
-        <?php include('Navigation.php'); ?>
+        <?php include('nav/Navigation.php'); ?>
     </div>
 </nav>
 <main>

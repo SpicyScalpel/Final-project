@@ -11,5 +11,15 @@
     <a href="Orders.php" class="shop-icon">
         <img src="img/storeIcon.png" alt="Shop">
     </a>
-    <a class="ml-auto btn btn-outline-primary" href="#">Sign up</a>
+    <?php
+    session_start();
+    // Проверяем, авторизован ли пользователь
+    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+        // Пользователь авторизован, выводим кнопку "Log out" со стилями Bootstrap
+        echo '<a class="btn btn-outline-danger ml-auto" href="log/Logout.php">Log out</a>';
+    } else {
+        // Пользователь не авторизован, выводим кнопку "Log in" со стилями Bootstrap
+        echo '<a class="btn btn-outline-primary ml-auto" href="reg/SigningUp.php">Log in</a>';
+    }
+    ?>
 </nav>

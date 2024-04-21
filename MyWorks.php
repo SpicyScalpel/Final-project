@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
-        <?php include('Navigation.php'); ?>
+        <?php include('nav/Navigation.php'); ?>
     </div>
 </nav>
 
@@ -46,7 +46,7 @@
             echo "<ul class='list-unstyled mt-3 mb-4'>";
             echo "<li>" . $row['description'] . "</li>";
             echo "</ul>";
-            echo "<button type='button' class='btn btn-lg btn-block btn-outline-primary'>Sign up for purchase</button>";
+            echo "<button type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='window.location.href=\"SigningUp.php\";'>Sign up for purchase</button>";
             echo "</div>";
             echo "</div>";
         }
