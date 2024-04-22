@@ -28,12 +28,13 @@ if (mysqli_num_rows($result) == 1) {
     // Пользователь найден, устанавливаем сессию для сохранения состояния входа
     $_SESSION['logged_in'] = true;
     $_SESSION['username'] = $username;
-    header("Location: Index.php"); // Перенаправляем пользователя на страницу приветствия
+    header("Location: ../Index.php"); // Перенаправляем пользователя на страницу приветствия
     exit(); // Останавливаем выполнение скрипта
 } else {
-    $_SESSION['wrong_data'] = "Invalid username or password!"; // Сохраняем сообщение об ошибке в сессии
-    header("Location: Index.php"); // Перенаправляем пользователя на страницу входа
-    exit(); // Останавливаем выполнение скрипта
+    $_SESSION['wrong_data'] = "Invalid username or password!";// Сохраняем сообщение об ошибке в сессии
+    header("Location: SigningUp.php");
+    // Не перенаправляем пользователя, а просто завершаем скрипт
+    exit();
 }
 
 mysqli_close($connection);

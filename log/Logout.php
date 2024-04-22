@@ -6,6 +6,6 @@ session_unset();
 session_destroy();
 
 // Перенаправляем пользователя на главную страницу или на другую страницу
-header("Location: Index.php");
+header("Location: ../Index.php");
 exit;
 ?>

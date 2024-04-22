@@ -28,7 +28,13 @@
         <button type="submit" class="btn btn-primary">Sign in</button>
     </form>
     <div id="error_message" style="color: red;"></div>
-    <div id="wrong_data" style="color: red;"></div>
+    <?php
+    // Проверка наличия сообщения об ошибке
+    if (isset($_SESSION['wrong_data'])) {
+        echo '<div style="color: red;">' . $_SESSION['wrong_data'] . '</div>';
+        unset($_SESSION['wrong_data']); // Очистка сообщения об ошибке после вывода
+    }
+    ?>
     <script src="../js/Check.js"></script>
 
     <h2>No account?</h2>
@@ -39,7 +45,6 @@
     <h2>Sign up via social media</h2>
     <div class="row">
             <a href="#" class="btn btn-outline-primary">Google</a>
-            <a href="#" class="btn btn-outline-primary">Facebook</a>
     </div>
 </main>
 <?php include('../nav/FootForReg.php'); ?>
