@@ -8,7 +8,7 @@
     <a class="p-2 text-dark" href="MyWorks.php">Products</a>
     <a class="p-2 text-dark" href="AboutMe.php">About me</a>
     <a class="p-2 text-dark" href="About.php">About</a>
-    <a href="../Orders.php" class="shop-icon">
+    <a href="Orders.php" class="shop-icon">
         <img src="img/storeIcon.png" alt="Shop">
     </a>
 

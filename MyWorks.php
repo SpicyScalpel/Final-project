@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Karina php</title>
+    <title>My Works</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src=""></script>
@@ -34,21 +34,42 @@
         $sql = "SELECT * FROM products";
         $result = mysqli_query($connection, $sql);
 
-        // Отображение продуктов
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo "<div class='card mb-4 shadow-sm'>";
-            echo "<div class='card-header'>";
-            echo "<h4 class='my-0 font-weight-normal'>" . $row['name'] . "</h4>";
-            echo "</div>";
-            echo "<div class='card-body'>";
-            echo "<img src='" . $row['image_path'] . "' class='img-thumbnail'>";
-            echo "<h1 class='card-title pricing-card-title'>$" . $row['price'] . " <small class='text-muted'>/ mo</small></h1>";
-            echo "<ul class='list-unstyled mt-3 mb-4'>";
-            echo "<li>" . $row['description'] . "</li>";
-            echo "</ul>";
-            echo "<button type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='window.location.href=\"SigningUp.php\";'>Sign up for purchase</button>";
-            echo "</div>";
-            echo "</div>";
+        // Проверка, залогинен ли пользователь
+        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            // Если пользователь залогинен, отобразить кнопку "Просто приобрести"
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='card mb-4 shadow-sm'>";
+                // Код для отображения продукта
+                echo "<div class='card-header'>";
+                echo "<h4 class='my-0 font-weight-normal'>" . $row['name'] . "</h4>";
+                echo "</div>";
+                echo "<div class='card-body'>";
+                echo "<img src='" . $row['image_path'] . "' class='img-thumbnail'>";
+                echo "<h1 class='card-title pricing-card-title'>" . $row['price'] . " € <small class='text-muted'></small></h1>";
+                echo "<ul class='list-unstyled mt-3 mb-4'>";
+                echo "<li>" . $row['description'] . "</li>";
+                echo "</ul>";
+                echo "<button type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='window.location.href=\"Orders.php?id=" . $row['id'] . "\";'>Purchase</button>";
+                echo "</div>";
+                echo "</div>";
+            }
+        } else {
+            // Отображение продуктов
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='card mb-4 shadow-sm'>";
+                echo "<div class='card-header'>";
+                echo "<h4 class='my-0 font-weight-normal'>" . $row['name'] . "</h4>";
+                echo "</div>";
+                echo "<div class='card-body'>";
+                echo "<img src='" . $row['image_path'] . "' class='img-thumbnail'>";
+                echo "<h1 class='card-title pricing-card-title'>" . $row['price'] . " € <small class='text-muted'></small></h1>";
+                echo "<ul class='list-unstyled mt-3 mb-4'>";
+                echo "<li>" . $row['description'] . "</li>";
+                echo "</ul>";
+                echo "<button type='button' class='btn btn-lg btn-block btn-outline-primary' onclick='window.location.href=\"reg/SigningUp.php\";'>Log in for purchase</button>";
+                echo "</div>";
+                echo "</div>";
+            }
         }
 
         // Закрытие соединения

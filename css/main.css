@@ -80,5 +80,82 @@ iframe {
     margin-top: 50px; /* Отступ сверху */
 }
 
+.product-not-found {
+    font-size: 35px; /* Увеличиваем размер шрифта */
+    margin-top: 70px; /* Устанавливаем отступ сверху */
+    color: black; /* Черный цвет текста */
+    font-weight: bold; /* Делаем текст жирным */
+}
+.product-container {
+    display: flex; /* Горизонтальное расположение */
+    flex-wrap: wrap; /* Перенос элементов на новую строку при нехватке места */
+    width: 70%; /* Ширина контейнера 70% от ширины экрана */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    gap: 20px; /* Промежуток между элементами */
+    border: 1px solid #ccc; /* Добавляем рамку шириной 1 пиксель и серого цвета */
+}
+
+.total-container {
+    display: flex; /* Горизонтальное расположение */
+    flex-direction: column; /* Вертикальное расположение дочерних элементов */
+    align-items: flex-end; /* Выравнивание элементов по правому краю */
+    width: 70%; /* Ширина контейнера 70% от ширины экрана */
+    margin: 20px auto; /* Центрирование по горизонтали с небольшим отступом сверху и снизу */
+}
+
+.product-row {
+    display: flex; /* Устанавливаем flex-контейнер */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 50%;
+    height: auto;
+}
+
+.product-details {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.product-details h4 {
+    margin-top: 0;
+}
+
+.product-details p {
+    margin-bottom: 20px;
+}
+
+.remove-product {
+    cursor: pointer;
+    color: red;
+}
+
+.actions {
+    text-align: right;
+}
+
+div.total-container button.btn-primary {
+    background-color: red;
+    color: white;
+    border: white;
+}
+
+.total-price {
+    font-weight: bold; /* Жирный шрифт для цены */
+    font-size: 1.2em; /* Увеличиваем размер шрифта */
+    margin-bottom: 10px; /* Добавляем небольшой отступ снизу */
+}
+.action-buttons {
+    margin-bottom: 20px; /* Добавляем отступ снизу для кнопок */
+}
+
 
 
