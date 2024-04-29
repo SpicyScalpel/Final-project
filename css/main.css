@@ -157,5 +157,177 @@ div.total-container button.btn-primary {
     margin-bottom: 20px; /* Добавляем отступ снизу для кнопок */
 }
 
+.container {
+    margin: 20px auto;
+    padding: 0 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+}
+.section {
+    border-radius: 5px;
+    color: black;
+    margin-right: 20px;
+    height: 250px;
+}
+.section1 {
+    width: 50%;
+    background-image: url('../img/9IBp.gif');
+    background-size: cover;
+    background-position: center;
+}
+.section2 {
+    background-color: #FBEBE3;
+    width: 30%;
+}
+.section3 {
+    width: 20%;
+    background-image: url('../img/giphy1.gif');
+    background-size: cover;
+    background-position: center;
+}
+.section4 {
+    background-color: #FBEBE3;
+    width: 30%;
+}
+.section5 {
+    width: 40%;
+    background-image: url('../img/KBZ.gif');
+    background-size: cover;
+    background-position: center;
+}
+.section6 {
+    background-color: #FBEBE3;
+    width: 30%;
+}
+.section7 {
+    width: 20%;
+    background-image: url('../img/giphy2.gif');
+    background-size: cover;
+    background-position: center;
+}
+.section8 {
+    background-color: #FBEBE3;
+    width: 35%;
+}
+.section9 {
+    background-image: url('../img/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+.word {
+    text-align: center;
+    margin-top: 110px;
+}
+a.text-dark:hover {
+    border: 2px solid orange; /* Обводка при наведении */
+    border-radius: 50px; /* Создание круглой обводки */
+    padding: 5px; /* Дополнительный отступ для видимости обводки */
+}
+a.text-dark {
+    text-decoration: none; /* Убрать подчеркивание у ссылок */
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sek {
+    padding: 35px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.small-image-container {
+    position: absolute;
+    bottom: -15px;
+    left: -15px; /* Изменено на left для смещения влево */
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid #333;
+    padding: 3px;
+}
+
+.small-image-container img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.pages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    justify-content: center;
+}
+
+.pages-grid > div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center; /* Центрируем текст внутри контейнеров */
+}
+
+.custom-img {
+    width: 280px; /* Задаем ширину */
+    height: 200px; /* Задаем высоту */
+}
+
+.main-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.myweb {
+    text-align: center;
+    margin: 0 20px; /* Добавляем отступы между блоками */
+}
+
+.myweb img {
+    width: 280px; /* Задаем размер изображений */
+    height: 200px;
+}
+
+.delivery_menu {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.head{
+    margin-top: 20px;
+}
+
 
 

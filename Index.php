@@ -16,6 +16,42 @@
     </div>
 </nav>
 <main>
+    <div class="container">
+        <ul>
+            <li>
+                <div class="section section1">
+                </div>
+                <div class="section section2">
+                    <h2 class="word">EMOTIONS</h2>
+                </div>
+                <div class="section section3">
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="section section4">
+                    <h2 class="word">CREATIVITY</h2>
+                </div>
+                <div class="section section5">
+                </div>
+                <div class="section section6">
+                    <h2 class="word">INSPIRATION</h2>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="section section7">
+                </div>
+                <div class="section section8">
+                    <h2 class="word">UNIQUENESS</h2>
+                </div>
+                <div class="section section9">
+                </div>
+            </li>
+        </ul>
+    </div>
 </main>
 <?php include('Footer.php'); ?>
 </body>

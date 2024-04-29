@@ -7,11 +7,6 @@
     <title>Orders</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            text-align: center; /* Центрируем содержимое body */
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -96,8 +91,12 @@
         </div>
         <?php
     } else {
+        echo "<div class='container' style='display: flex; justify-content: center; align-items: center; height: auto;'>";
+        echo "<div class='content' style='text-align: center;'>";
         echo "<div class='product-not-found'>Products are removed!</div>";
         echo "<button type='button' class='btn btn-lg btn-outline-primary' onclick='window.location.href=\"MyWorks.php\";'>Back to products</button>";
+        echo "</div>";
+        echo "</div>";
     }
 
     // Закрываем соединение с базой данных
