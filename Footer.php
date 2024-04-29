@@ -18,9 +18,8 @@
     echo '<h5>Information</h5>';
     echo '<ul class="list-unstyled text-small">';
     echo '<li><a class="text-muted" href="Delivery.php">Delivery</a></li>';
-    echo '<li><a class="text-muted" href="#">Payment</a></li>';
-    echo '<li><a class="text-muted" href="#">Return</a></li>';
-    echo '<li><a class="text-muted" href="#">Gift cards</a></li>';
+    echo '<li><a class="text-muted" href="Payment.php">Payment</a></li>';
+    echo '<li><a class="text-muted" href="Return.php">Return</a></li>';
     echo '</ul>';
     echo '</div>';
     echo '<div class="col-6 col-md">';
@@ -29,6 +28,7 @@
     echo '<li><a class="text-muted" href="#">Information about purchasing</a></li>';
     echo '<li><a class="text-muted" href="#">Discounts</a></li>';
     echo '<li><a class="text-muted" href="#">Favorites</a></li>';
+    echo '<li><a class="text-muted" href="#">Gift cards</a></li>';
     echo '</ul>';
     echo '</div>';
     echo '</div>';

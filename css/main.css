@@ -329,5 +329,16 @@ a.text-dark {
     margin-top: 20px;
 }
 
+.custom-list {
+    list-style-type: none;
+}
+
+.custom-list li {
+    padding-left: 20px; /* Отступ для текста */
+    background-image: url('../img/icon.png');
+    background-size: 16px; /* Размер изображения */
+    background-repeat: no-repeat;
+    background-position: 0 50%; /* Положение изображения по вертикали */
+}
 
 
